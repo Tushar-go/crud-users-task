@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_URL } from '../constant';
 
-const API_URL = 'https://jsonplaceholder.typicode.com/users';
+
 
 function UserForm({ user, onSuccess }) {
   const [formData, setFormData] = useState({
